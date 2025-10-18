@@ -19,7 +19,7 @@ const COMPANIES = [
     name: "EasyPark",
     smsNumber: "+4610 333 44 00",
     template: "{ZON} {REG} {PNR}", 
-    pnrLength: 12
+    pnrLength: 10
   }
 ];
 // ====================================================================
