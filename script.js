@@ -84,17 +84,17 @@ function openSms(platform){
 btnIOS.addEventListener("click",     () => openSms("ios"));
 btnAndroid.addEventListener("click", () => openSms("android"));
 
-// Optional: show desktop hint (sms: oftast meningslöst på dator)
+// Optional: show desktop hint
 if (!/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
   desktopNote.hidden = false;
 }
 
-// Format PNR based on company (e.g. Aimo wants YYYYMMDDXXXX)
+// Format PNR based on company
 function formatPnr(raw, company) {
   const digits = (raw || "").replace(/\D/g, "");
-  if (digits.length !== 12) return null; // user must type 12 digits
+  if (digits.length !== 12) return null; 
   if (company.pnrLength === 10) {
-    return digits.slice(2); // drop the first two year digits (YYMMDDNNNN)
+    return digits.slice(2);
   }
   return digits;
 }
