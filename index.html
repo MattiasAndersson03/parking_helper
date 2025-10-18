@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parking test</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Parkering – SMS</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
+  <main class="card">
+    <h1>Starta parkering via SMS</h1>
+
+    <label for="company">Parkeringsföretag</label>
+    <select id="company" required></select>
+
+    <div class="grid">
+      <div>
+        <label for="pnr">Personnummer</label>
+        <input id="pnr" type="text" inputmode="numeric" placeholder="ÅÅÅÅMMDDNNNN" required />
+      </div>
+
+      <div>
+        <label for="reg">Registreringsnummer</label>
+        <input id="reg" type="text" placeholder="ABC123" required />
+      </div>
+
+      <div>
+        <label for="zone">Zonkod</label>
+        <input id="zone" type="text" inputmode="numeric" placeholder="12345" required />
+      </div>
+    </div>
+
+    <button id="btnIOS" type="button">Öppna på iOS</button>
+    <button id="btnAndroid" type="button" class="secondary">Öppna på Android</button>
+
+    <p id="desktopNote" class="note" hidden>
+      Tips: Du verkar vara på dator. Öppna sidan på din mobil för att skicka SMS.
+    </p>
+  </main>
 </body>
 </html>
+
+
+
