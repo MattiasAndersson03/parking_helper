@@ -3,21 +3,23 @@ const COMPANIES = [
   {
     id: "parkster",
     name: "Parkster",
-    smsNumber: "+46701234567",
+    smsNumber: "+46707-13 14 15",
     template: "{ZON} {REG} {PNR}",
     pnrLength: 10
   },
   {
     id: "aimo",
     name: "Aimo Park",
-    smsNumber: "+46709876543",
-    template: "PNR:{PNR}; REG:{REG}; ZON:{ZON}" 
+    smsNumber: "+4671 711",
+    template: "{ZON} {REG} {PNR}",
+    pnrLength: 10
   },
   {
     id: "easypark",
     name: "EasyPark",
-    smsNumber: "+46709000000",
-    template: "ZONE {ZON} REG {REG} PNR {PNR}" 
+    smsNumber: "+4610 333 44 00",
+    template: "{ZON} {REG} {PNR}", 
+    pnrLength: 12
   }
 ];
 // ====================================================================
@@ -69,7 +71,7 @@ function openSms(platform){
   const reg = cleanReg(regInput.value);
   const zon = cleanZone(zoneInput.value);
 
-  if (!pnr) return alert("Ogiltigt personnummer (10 eller 12 siffror).");
+  if (!pnr) return alert("Ogiltigt personnummer (minst 12 siffror).");
   if (!reg) return alert("Ogiltigt registreringsnummer (minst 3 tecken).");
   if (!zon) return alert("Ogiltig zonkod (endast siffror).");
 
