@@ -1,6 +1,5 @@
 # 🚗 Parking via SMS
 
-> ⚠️ **Still under construction** — some links or company numbers may not be correct right now.
 🔗 **Try it here:** [https://mattiasandersson03.github.io/parking_helper/](https://mattiasandersson03.github.io/parking_helper/)
 
 A simple web tool built for the **Swedish parking system**, where users can quickly create SMS messages to start parking with different companies.  
