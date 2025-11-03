@@ -13,4 +13,4 @@ Hosted with **GitHub Pages**.
 ---
 
 ## 🧾 License
-This project is released under the **MIT License** – free to use, modify, and share.
+This project is released under the **MIT License** – free to use, modify, and share!
